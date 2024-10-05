@@ -2,7 +2,7 @@
 ## Для чего нужны миграции? Какую роль они играют или какую проблему решают?
 Миграции выполняют роль настройки структуры БД (DDL)
 ## Для чего нужен Eloquent ORM?
-Мээпинг реляционных связей таблиц в связи между объектами ООП
+Мээпинг реляционных связей таблиц в связи между объектами ООП, а также инструментарий для работы с ними.
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
