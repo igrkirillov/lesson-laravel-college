@@ -2,9 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GroupController as GroupController;
+use App\Http\Controllers\StudentController as StudentController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect("groups");
 });
 
 Route::resource('/groups', GroupController::class);
+Route::resource('/groups.students', StudentController::class);

@@ -28,7 +28,11 @@ class GroupController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $group = new Group();
+        $group->title = $request->input('title');
+        $group->start_from = $request->input('start_from');
+        $group->save();
+        return redirect("groups");
     }
 
     /**
