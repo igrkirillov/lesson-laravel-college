@@ -42,7 +42,8 @@ class StudentController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $student = Student::with('group')->findOrFail($id);
+        return view('students.card', ['student' => $student, "group" => $student->group]);
     }
 
     /**

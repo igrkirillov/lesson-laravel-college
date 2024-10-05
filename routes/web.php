@@ -8,5 +8,7 @@ Route::get('/', function () {
     return redirect("groups");
 });
 
-Route::resource('/groups', GroupController::class);
-Route::resource('/groups.students', StudentController::class);
+Route::resource('/groups', GroupController::class)
+    ->except("edit", "update", "destroy");
+Route::resource('/groups.students', StudentController::class)
+    ->except("edit", "update", "destroy");

@@ -12,7 +12,7 @@
     <ul class="d-none po-list" id="size">
         @foreach ($students as $student)
             <li name="size" value="{{ $student->id }}">
-                <span>{{ $student->name . " " . $student->surname }}</span>
+                <span><a href="/groups/{{$group->id}}/students/{{$student->id}}">{{ $student->name . " " . $student->surname }}</a></span>
             </li>
         @endforeach
     </ul>
