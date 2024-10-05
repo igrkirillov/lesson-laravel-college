@@ -40,7 +40,7 @@ class GroupController extends Controller
      */
     public function show(Group $group)
     {
-        //
+        return view('students.index', ['group' => $group, 'students' => $group->students()->get()]);
     }
 
     /**

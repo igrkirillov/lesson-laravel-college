@@ -12,7 +12,7 @@
     <ul class="d-none po-list" id="size">
         @foreach ($groups as $group)
             <li name="size" value="{{ $group->id }}">
-                <span>Группа: {{ $group->title }}</span>
+                <span>Группа: <a href="/groups/{{$group->id}}">{{ $group->title }}</a></span>
                 <span>Дата-время: {{ $group->start_from }}</span>
             </li>
         @endforeach

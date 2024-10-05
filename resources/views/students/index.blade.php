@@ -16,5 +16,6 @@
             </li>
         @endforeach
     </ul>
+    <a href="/groups"><< В группы</a>
 </body>
 </html>
